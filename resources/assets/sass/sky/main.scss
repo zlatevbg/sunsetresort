@@ -1,0 +1,374 @@
+@import 'vendor/breakpoint';
+@import 'vendor/susy';
+@import 'components/mixins';
+
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  gutter-position: after,
+);
+
+$max-width: 1260px;
+$z-index-top: 9999;
+$imgPath: '/img/sky/';
+
+$selection-color: lighten(#0da3ed, 20%);
+$brand-secondary: #db6969;
+
+@import 'components/reset';
+@import 'vendor/bootstrap';
+@import 'vendor/magnific-popup';
+@import 'vendor/multiselect';
+@import 'vendor/datatables';
+@import 'vendor/jquery-ui';
+
+/* Preload images */
+body:after {
+  content: url($imgPath + 'loading.gif');
+  display: none;
+}
+
+@import 'components/layout';
+@import 'components/ajax';
+@import 'components/forms';
+@import 'components/dropdown';
+@import 'components/datatables';
+
+@import 'components/fixed-header';
+@import 'components/breadcrumbs';
+@import 'components/sidebar';
+@import 'components/footer';
+@import 'components/magnific-popup';
+@import 'components/qtip';
+
+@import 'components/login';
+
+.btn-secondary {
+    @include button-variant(#fff, $brand-secondary, darken($brand-secondary, 5%));
+}
+
+a,
+label,
+div {
+    > .sub-text {
+        font-size: $font-size-h5;
+        margin-left: 0.3125em; /* 5/16 */
+        color: $gray-light;
+    }
+}
+
+.table-rental-contracts {
+    table-layout: fixed;
+
+    > thead > tr > th {
+        &:first-child {
+            width: 9.375em; /* 150/16 */
+        }
+    }
+
+    > tbody > tr > td {
+        vertical-align: middle;
+
+        &:first-child {
+            width: 9.375em; /* 150/16 */
+        }
+
+        .form-group {
+            margin: 0;
+        }
+    }
+}
+
+.tooltip-content {
+    display: none;
+}
+
+.tooltip-info-icon,
+.tooltip-info-icon-right {
+    > .glyphicon {
+        font-size: 16px;
+        color: #aaa;
+    }
+
+    > .text-primary {
+      color: $brand-primary;
+    }
+}
+
+.tooltip-info-icon {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.tooltip-info-icon-right {
+    float: right;
+}
+
+.tooltip-spacer {
+    float: right;
+    width: 16px;
+    height: 1px;
+}
+
+#generate-password {
+    cursor: pointer;
+    float: right;
+}
+
+.glyphicon-left {
+    margin-right: 0.625em; /* 10/16 */
+}
+
+.glyphicon-right {
+    margin-left: 0.625em; /* 10/16 */
+}
+
+.glyphicon-small {
+    font-size: $font-size-small;
+}
+
+.glyphicon-large {
+    font-size: $font-size-large;
+}
+
+.glyphicon-top {
+    vertical-align: top;
+}
+
+.glyphicon-color-red {
+    color: #f00 !important;
+}
+
+.glyphicon-color-blue {
+    color: #00f !important;
+}
+
+.progress {
+    margin: 0.625em 0 0; /* 10/16 */
+}
+
+.progress-bar {
+    line-height: ($line-height-computed / $font-size-small);
+}
+
+.alert-messages {
+    &.absolute {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        max-width: $max-width;
+    }
+
+    > .alert {
+        margin: $form-group-margin-bottom 0;
+        font-size: $font-size-h5;
+        text-align: left;
+
+        > ul {
+            padding: 0;
+            list-style-type: none;
+
+            > li {
+                margin-top: 0.3125em; /* 5/16 */
+            }
+        }
+    }
+
+    .glyphicon {
+        margin-right: 0.3125em; /* 5/16 */
+    }
+}
+
+textarea.owners-comments {
+    height: 7.125em; /* 114/16 */
+}
+
+textarea.apartments-comments {
+    height: 7.125em; /* 114/16 */
+}
+
+textarea.small-comments {
+    height: 6.25em; /* 100/16 */
+}
+
+textarea.contract-year-comments {
+    height: 7.125em; /* 114/16 */
+}
+
+.newsletter-wrapper {
+    width: 670px;
+
+    > h1 {
+        @include clearfix;
+    }
+
+    .newsletter-options {
+        margin: 1.25em 0; /* 20/16 */
+    }
+
+    .newsletter-merge {
+        td {
+            word-break: break-all;
+        }
+    }
+
+    .text {
+        text-align: justify;
+
+        table {
+            @extend .table, .table-bordered;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+
+            &.signature {
+                display: inline-block;
+                user-select: none;
+            }
+        }
+    }
+}
+
+.google-analytics-wrapper {
+    @include clearfix;
+
+    .gapi-analytics-data-chart .gapi-analytics-data-chart-styles-table-th,
+    .gapi-analytics-data-chart .gapi-analytics-data-chart-styles-table-td {
+        text-align: center;
+    }
+
+    .google-analytics-chart {
+        @include span(6);
+        margin-top: 1.25em; /* 20/16 */
+
+        &:nth-child(odd) {
+            @include last;
+        }
+
+        > h1 {
+            margin-top: 0;
+            font-size: $font-size-h2;
+        }
+
+        > div {
+            padding: 1em;
+            border: 1px solid #ddd;
+            background-color: #fff;
+        }
+    }
+}
+
+.chart-wrapper {
+    @include clearfix;
+
+    .gapi-analytics-data-chart .gapi-analytics-data-chart-styles-table-th,
+    .gapi-analytics-data-chart .gapi-analytics-data-chart-styles-table-td {
+        text-align: center;
+    }
+
+    .chart {
+        margin-top: 1.25em; /* 20/16 */
+
+        > h1 {
+            margin-top: 0;
+            font-size: $font-size-h2;
+        }
+
+        > div {
+            min-height: 400px;
+            padding: 1em;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.report-wrapper {
+    margin-bottom: 1.25em; /* 20/16 */
+
+    > h1 {
+        margin-top: pxEmFont(10px, 1.5em);
+    }
+}
+
+#report-form {
+    font-size: 0.875em; /* 14/16 */
+    text-align: center;
+
+    .row-wrapper {
+        margin-top: pxEmFont(10px, 0.875em);
+    }
+
+    .form-group {
+        min-width: 238px; // datepicker width
+        margin-bottom: pxEmFont(10px, 0.875em);
+
+        > label {
+            display: block;
+            text-align: left;
+        }
+
+        > input {
+            width: 100%;
+        }
+    }
+}
+
+td.last-day > a,
+td.first-day > a {
+  border-color: #f00!important;
+}
+
+td.booked-day > span {
+  border-color: #f00!important;
+}
+
+td.available-day > a {
+  border-color: #0f0!important;
+}
+
+.table-rental-rates {
+    table-layout: fixed;
+
+    > thead > tr > th {
+        &:first-child {
+            width: 18.75em; /* 300/16 */
+        }
+    }
+
+    > tbody > tr > td {
+        vertical-align: middle;
+
+        &:first-child {
+            width: 18.75em; /* 300/16 */
+        }
+
+        .form-group {
+            margin: 0;
+        }
+    }
+}
+
+.chart-left {
+    @include span(6);
+}
+
+.chart-right {
+    @include span(6 last);
+}
+
+.mb-5 {
+  margin-bottom: 50px;
+}
+
+svg > g > g:last-child {
+  pointer-events: none;
+}

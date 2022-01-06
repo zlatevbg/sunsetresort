@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head dir="ltr">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BOOKING FORM # ${ID} - ${OWNER}</title>
+    <style type="text/css">
+        body {
+            font-family: 'DejaVu Sans';
+            font-size: 14px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: normal;
+            font-size: 20px;
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+            margin-bottom: 20px;
+        }
+
+        table th,
+        table td {
+            padding: 2px 5px;
+            vertical-align: top;
+            border: 1px solid #ddd;
+        }
+
+        table thead th {
+            border-bottom: 2px solid #ddd;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .table-caption {
+            background-color: #deeaf6;
+        }
+
+        .table-header {
+            background-color: #f2f2f2;
+        }
+
+        .no-border {
+            border: none;
+        }
+
+        .no-border th,
+        .no-border td {
+            border: none;
+        }
+
+        .note {
+            font-weight: bold;
+            font-size: 11px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<p class="text-center"><img width="149" height="100" src="${LOGO}" alt="Sunset Resort Logo"></p>
+
+<h1>BOOKING FORM # <strong>${ID} - ${OWNER}</strong></h1>
+
+<table cellspacing="0" cellpadding="5" width="100%">
+    <thead>
+        <tr class="table-caption">
+            <th colspan="5">APARTMENT DETAILS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="table-header">
+            <td width="20%" class="text-center">Building</td>
+            <td width="20%" class="text-center">Number</td>
+            <td width="20%" class="text-center">Type</td>
+            <td width="20%" class="text-center">Furniture</td>
+            <td width="20%" class="text-center">View</td>
+        </tr>
+        <tr>
+            <td width="20%" class="text-center"><strong>${BUILDING}</strong></td>
+            <td width="20%" class="text-center"><strong>${APARTMENT}</strong></td>
+            <td width="20%" class="text-center"><strong>${TYPE}</strong></td>
+            <td width="20%" class="text-center"><strong>${FURNITURE}</strong></td>
+            <td width="20%" class="text-center"><strong>${VIEW}</strong></td>
+        </tr>
+    </tbody>
+</table>
+
+<table cellspacing="0" cellpadding="5" width="100%">
+    <thead>
+        <tr class="table-caption">
+            <th colspan="5">ADDITIONAL INFORMATION</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="table-header">
+            <td width="20%" class="text-center">Rental Contract</td>
+            <td width="20%" class="text-center">M&M Fees</td>
+            <td width="20%" class="text-center">Annual communal fee</td>
+            <td width="20%" class="text-center">Pool Usage</td>
+            <td width="20%" class="text-center">Exception</td>
+        </tr>
+        <tr>
+            <td width="20%" class="text-center"><strong>${RC}</strong></td>
+            <td width="20%" class="text-center"><strong>${MM}</strong></td>
+            <td width="20%" class="text-center"><strong>${CT}</strong></td>
+            <td width="20%" class="text-center"><strong>${PU}</strong></td>
+            <td width="20%" class="text-center"><strong>${EX}</strong></td>
+        </tr>
+    </tbody>
+</table>
+
+<table cellspacing="0" cellpadding="5" width="100%">
+    <thead>
+        <tr class="table-caption">
+            <th colspan="4">FLIGHT DETAILS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="table-header">
+            <td width="50%" colspan="2" class="text-center">Arrival</td>
+            <td width="50%" colspan="2" class="text-center">Departure</td>
+        </tr>
+        <tr>
+            <td width="25%" class="text-right">Date</td>
+            <td width="25%"><strong>${ADATE}</strong></td>
+            <td width="25%" class="text-right">Date</td>
+            <td width="25%"><strong>${DDATE}</strong></td>
+        </tr>
+        <tr>
+            <td width="25%" class="text-right">Flight number</td>
+            <td width="25%"><strong>${AFLIGHT}</strong></td>
+            <td width="25%" class="text-right">Flight number</td>
+            <td width="25%"><strong>${DFLIGHT}</strong></td>
+        </tr>
+        <tr>
+            <td width="25%" class="text-right">Airport</td>
+            <td width="25%"><strong>${AAIRPORT}</strong></td>
+            <td width="25%" class="text-right">Airport</td>
+            <td width="25%"><strong>${DAIRPORT}</strong></td>
+        </tr>
+        <tr>
+            <td width="25%" class="text-right">Transfer</td>
+            <td width="25%"><strong>${ATRANSFER}</strong></td>
+            <td width="25%" class="text-right">Transfer</td>
+            <td width="25%"><strong>${DTRANSFER}</strong></td>
+        </tr>
+    </tbody>
+</table>
+
+<table cellspacing="0" cellpadding="5" width="100%">
+    <thead>
+        <tr class="table-caption">
+            <th colspan="2">VISITOR'S DETAILS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="table-header">
+            <td width="50%" class="text-center">Adults: <strong>${ADULTS}</strong></td>
+            <td width="50%" class="text-center">Children (up to 12 y.): <strong>${CHILDREN}</strong></td>
+        </tr>
+        <!--guests-start-->
+        <tr>
+            <td width="50%"><strong>${ADULT}</strong></td>
+            <td width="50%"><strong>${CHILD}</strong></td>
+        </tr>
+        <!--guests-end-->
+    </tbody>
+</table>
+
+<!--services-start-->
+<table cellspacing="0" cellpadding="5" width="100%">
+    <thead>
+        <tr class="table-caption">
+            <th>COSTS / SERVICES</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>${SERVICES}</td>
+        </tr>
+    </tbody>
+</table>
+<!--services-end-->
+
+<!--remarks-start-->
+<table cellspacing="0" cellpadding="5" width="100%">
+    <thead>
+        <tr class="table-caption">
+            <th>REMARKS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>${REMARKS}</td>
+        </tr>
+    </tbody>
+</table>
+<!--remarks-end-->
+
+<table class="no-border" cellspacing="0" cellpadding="5" width="100%">
+    <tbody>
+        <tr>
+            <td>${DATE}</td>
+            <td class="note">${NOTE}</td>
+            <td class="text-right">${USER}</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

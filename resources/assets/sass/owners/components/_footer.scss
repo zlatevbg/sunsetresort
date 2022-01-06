@@ -1,0 +1,61 @@
+#footer {
+    border-top: pxEmFont(6px, 0.875em) solid $accent-secondary;
+    background-color: $brand-primary;
+    color: #fff;
+    font-size: 0.875em; /* 14/16 */
+    @include clearfix;
+
+    > p {
+        padding: 0 pxEmFont(10px, 0.875em);
+        text-align: center;
+
+        @include breakpoint($screen-xs2) {
+            margin: 0;
+            height: pxEmFont(30px, 0.875em);
+            line-height: pxEmFont(30px, 0.875em);
+            float: left;
+            text-align: left;
+        }
+    }
+
+    > ul {
+        list-style-type: none;
+        padding: 0.625em 0 0.3125em 0; /* 10/16 */ /* 5/16 */
+        margin: 0;
+        text-align: center;
+
+        @include breakpoint($screen-xs2) {
+            padding: 0;
+            float: right;
+            text-align: right;
+        }
+
+        > li {
+            display: inline-block;
+
+            &.active {
+                > a {
+                    background-color: darken($brand-primary, 10%);
+                }
+            }
+
+            > a {
+                display: inline-block;
+                height: pxEmFont(30px, 0.875em);
+                line-height: pxEmFont(30px, 0.875em);
+                padding: 0 pxEmFont(10px, 0.875em);
+                color: #fff;
+                outline: none;
+                text-decoration: none;
+                cursor: pointer;
+                text-transform: uppercase;
+                font-family: $font-family-special;
+
+                &:hover,
+                &.active {
+                    background-color: darken($brand-primary, 10%);
+                }
+            }
+        }
+    }
+}

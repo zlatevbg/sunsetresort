@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head dir="ltr">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rental Contract</title>
+    <style type="text/css">
+        html {
+            margin: 50px 50px 20px 50px;
+        }
+
+        body {
+            font-family: 'DejaVu Sans';
+            font-size: 11px;
+            line-height: 1em;
+        }
+
+        .font-size-7 {
+            font-size: 7px;
+        }
+
+        .font-size-8 {
+            font-size: 8px;
+        }
+
+        .font-size-12 {
+            font-size: 12px;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            font-size: 11px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+            padding: 0;
+        }
+
+        .break {
+            page-break-after: always;
+        }
+
+        table tr td {
+            vertical-align: top;
+            padding: 0 10px;
+            line-height: 1em;
+        }
+
+        td.padding {
+            padding: 10px;
+        }
+
+        .border {
+            border: 1px solid #000;
+        }
+
+        .border-bottom {
+            border-bottom: 1px solid #000;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<table class="border" cellspacing="0" cellpadding="0" width="100%">
+    <tbody>
+        <tr>
+            <td class="padding" width="100%"><h1>СЪГЛАСИЕ ЗА ГЛАСУВАНЕ</h1></td>
+        </tr>
+        <tr>
+            <td width="100%">Днес ${DATE}, долуподписаният,</td>
+        </tr>
+        <tr>
+            <td class="padding" width="100%"><strong>${OWNER-NAME}</strong>,<br>роден на ............................... в гр. ...............................<br>с адрес ${OWNER-ADDRESS}, в качеството си на собственик на апартамент, № <strong>${APARTMENT}</strong> в сграда ${BUILDINGNAME-BG}, ${BUILDINGDESCRIPTION-BG} в комплекс „Сънсет ризорт”, гр. Поморие,</td>
+        </tr>
+        <tr>
+            <td width="100%"><h1>ДАВАМ СЪГЛАСИЕ:</h1></td>
+        </tr>
+        <tr>
+            <td class="padding" width="100%">${PROXYNAME-BG}, ${PROXYDETAILS-BG}, собственик на индивидуален обект в сграда ${BUILDINGNAME-BG}, ${BUILDINGDESCRIPTION-BG}, в комплекс „Сънсет ризорт” град Поморие:</td>
+        </tr>
+        <tr>
+            <td width="100%">1. Да ме представлява пред Общите събрания на собствениците в сграда ${BUILDINGNAME-BG}, ${BUILDINGDESCRIPTION-BG}, като той / тя има право да гласува и взема решения от мое име изцяло по негова преценка без ограничение по всички въпроси, които се обсъждат на Общите събрания на собствениците на етажната собственост – извънредни или годишни.</td>
+        </tr>
+        <tr>
+            <td width="100%">2. Пълномощникът има право да гласува и взема решения от мое име изцяло по негова преценка без ограничение за определяне и събиране на паричната вноска за разходите за управление и поддръжка на общите части.</td>
+        </tr>
+        <tr>
+            <td width="100%">3. Пълномощникът има право да гласува и взема решения от мое име изцяло по негова преценка без ограничение за определяне и събиране на вноски за Фонд „Ремонт и Обновяване“.</td>
+        </tr>
+        <tr>
+            <td width="100%">4. Пълномощникът има право да гласува и взема решения от мое име изцяло по негова преценка без ограничение за разпореждане и използване на средствата събрани във Фонд „Ремонт и Обновяване“.</td>
+        </tr>
+        <tr>
+            <td width="100%">5. Настоящото отменя всякакви други пълномощни дадени в този смисъл на други лица.</td>
+        </tr>
+        <tr>
+            <td width="100%">6. Настоящето съгласие важи до ${EXPIRY}г.</td>
+        </tr>
+        <tr>
+            <td width="100%">7. Това пълномощно е невалидно в случай, че Собственика присъства на ОС.</td>
+        </tr>
+        <tr>
+            <td class="padding" width="100%">Текстът на настоящото съгласие да се тълкува разширително и в полза на упълномощеното лице.</td>
+        </tr>
+        <tr>
+            <td width="100%">&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="padding text-center" width="100%">----------------------------------------------------------</td>
+        </tr>
+        <tr>
+            <td class="text-center" width="100%">СОБСТВЕНИК НА АПАРТАМЕНТ</td>
+        </tr>
+        <tr>
+            <td class="padding text-center font-size-7" width="100%"><strong>МОЛЯ НАПИШЕТЕ ПЪЛНОТО СИ ИМЕ</strong></td>
+        </tr>
+        <tr>
+            <td width="100%">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+{
+  "styles": {
+    "sky-main": {
+      "src": "./resources/assets/sass/sky/main.scss",
+      "dst": "./public/css/sky/",
+      "name": "main.css",
+      "watch": "./resources/assets/sass/sky/**/*.scss"
+    },
+    "owners-main": {
+      "src": "./resources/assets/sass/owners/main.scss",
+      "dst": "./public/css/owners/",
+      "name": "main.css",
+      "watch": "./resources/assets/sass/owners/**/*.scss"
+    }
+  },
+  "scripts": {
+    "sky-main": {
+      "src": "./resources/assets/js/sky/main.js",
+      "dst": "./public/js/sky/",
+      "name": "main.js",
+      "watch": [
+        "./resources/assets/js/sky/**/*.js",
+        "!./resources/assets/js/sky/vendor/fine-uploader.js",
+        "!./resources/assets/js/sky/vendor/ckfinder-3.2.0.js",
+        "!./resources/assets/js/sky/vendor/plugins/jquery.multiselect.js",
+        "!./resources/assets/js/sky/vendor/plugins/jquery.qtip.js",
+        "!./resources/assets/js/sky/vendor/jquery-ui.js"
+      ]
+    },
+    "sky-fine-uploader": {
+      "src": "./resources/assets/js/sky/vendor/fine-uploader.js",
+      "dst": "./public/js/sky/vendor/",
+      "name": "fine-uploader.js",
+      "watch": "./resources/assets/js/sky/vendor/fine-uploader.js"
+    },
+    "sky-ckfinder-3.2.0": {
+      "src": "./resources/assets/js/sky/vendor/ckfinder-3.2.0.js",
+      "dst": "./public/js/sky/vendor/ckfinder/",
+      "name": "ckfinder.js",
+      "watch": "./resources/assets/js/sky/vendor/ckfinder-3.2.0.js"
+    },
+    "sky-jquery.multiselect": {
+      "src": "./resources/assets/js/sky/vendor/plugins/jquery.multiselect.js",
+      "dst": "./public/js/sky/vendor/",
+      "name": "jquery.multiselect.js",
+      "watch": "./resources/assets/js/sky/vendor/plugins/jquery.multiselect.js"
+    },
+    "sky-jquery.qtip": {
+      "src": "./resources/assets/js/sky/vendor/plugins/jquery.qtip.js",
+      "dst": "./public/js/sky/vendor/",
+      "name": "jquery.qtip.js",
+      "watch": "./resources/assets/js/sky/vendor/plugins/jquery.qtip.js"
+    },
+    "sky-jquery-ui": {
+      "src": "./resources/assets/js/sky/vendor/jquery-ui.js",
+      "dst": "./public/js/sky/vendor/",
+      "name": "jquery-ui.js",
+      "watch": "./resources/assets/js/sky/vendor/jquery-ui.js"
+    },
+    "owners-main": {
+      "src": "./resources/assets/js/owners/main.js",
+      "dst": "./public/js/owners/",
+      "name": "main.js",
+      "watch": [
+        "./resources/assets/js/owners/**/*.js",
+        "!./resources/assets/js/owners/vendor/jquery-ui.js",
+        "!./resources/assets/js/owners/vendor/matchMedia.js",
+        "!./resources/assets/js/owners/vendor/plugins/jquery.multiselect.js"
+      ]
+    },
+    "owners-jquery-ui": {
+      "src": "./resources/assets/js/owners/vendor/jquery-ui.js",
+      "dst": "./public/js/owners/vendor/",
+      "name": "jquery-ui.js",
+      "watch": "./resources/assets/js/owners/vendor/jquery-ui.js"
+    },
+    "owners-matchMedia": {
+      "src": "./resources/assets/js/owners/vendor/matchMedia.js",
+      "dst": "./public/js/owners/vendor/",
+      "name": "matchMedia.js",
+      "watch": "./resources/assets/js/owners/vendor/matchMedia.js"
+    },
+    "owners-jquery.multiselect": {
+      "src": "./resources/assets/js/owners/vendor/plugins/jquery.multiselect.js",
+      "dst": "./public/js/owners/vendor/",
+      "name": "jquery.multiselect.js",
+      "watch": "./resources/assets/js/owners/vendor/plugins/jquery.multiselect.js"
+    }
+  },
+  "images": {
+    "root": {
+      "src": "./public/img/**/*",
+      "dst": "./public/img/",
+      "watch": "./public/img/**/*"
+    }
+  },
+  "knownOptions": {
+    "default": {
+      "production": false,
+      "skipcache": false
+    }
+  }
+}

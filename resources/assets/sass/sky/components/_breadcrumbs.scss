@@ -1,0 +1,89 @@
+#breadcrumbs {
+    border-bottom: 1px solid #ddd;
+    @include gradient-vertical($start-color: #fff, $end-color: #f5f5f5, $start-percent: 0%, $end-percent: 100%);
+    height: 1.875em; /* 30/16 */
+    padding: 0 0.3125em 0 0; /* 5/16 */
+
+    > ol {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        @include clearfix;
+
+        > li {
+            float: left;
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            line-height: pxEmFont(29px, 0.875em);
+            font-size: 0.875em; /* 14/16 */
+
+            &.nav-toggle {
+                font-size: $font-size-base;
+                line-height: pxEmFont(29px, $font-size-base);
+                border-right: 1px solid #ddd;
+                margin-right: pxEmFont(10px, $font-size-base);
+                background-color: $brand-primary;
+
+                &:hover {
+                    background-color: darken($brand-primary, 10%);
+                }
+
+                &.collapsed {
+                    > a {
+                        > span {
+                            &.glyphicon-remove {
+                                display: none;
+                            }
+
+                            &.glyphicon-menu-hamburger {
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+
+                > a {
+                    display: block;
+                    outline: none;
+                    padding: 0 0.3125em; /* 5/16 */
+                    height: 100%;
+                    line-height: 1.5625em; /* 25/16 */
+                    color: #fff;
+
+                    > span {
+                        font-size: 1.3125em; /* 21/16 */
+                        vertical-align: middle;
+
+                        &.glyphicon-menu-hamburger {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            &.active {
+                > a {
+                    color: $brand-secondary;
+                }
+            }
+
+            > span {
+                color: $gray-light;
+                padding: 0 pxEmFont(8px, $font-size-small);
+                font-size: $font-size-small;
+                font-weight: lighter;
+            }
+
+            > a {
+                display: inline-block;
+                color: $gray;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

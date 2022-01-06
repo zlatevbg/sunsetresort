@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head dir="ltr">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pool Usage Contract</title>
+    <style type="text/css">
+        html {
+            margin: 50px 50px 20px 50px;
+        }
+
+        body {
+            font-family: 'DejaVu Sans';
+            font-size: 10px;
+            line-height: 0.85em;
+        }
+
+        .font-size-7 {
+            font-size: 7px;
+        }
+
+        .font-size-8 {
+            font-size: 8px;
+        }
+
+        .font-size-12 {
+            font-size: 12px;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            font-size: 11px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+            padding: 0;
+        }
+
+        .break {
+            page-break-after: always;
+        }
+
+        table tr td {
+            vertical-align: top;
+            padding: 0 10px;
+            line-height: 0.85em;
+        }
+
+        td.padding {
+            padding: 10px;
+        }
+
+        .border {
+            border: 1px solid #000;
+        }
+
+        .border-right {
+            border-right: 1px solid #000;
+        }
+
+        .border-left {
+            border-left: 1px solid #000;
+        }
+
+        .border-bottom {
+            border-bottom: 1px solid #000;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<table class="border" cellspacing="0" cellpadding="0" width="100%">
+    <tbody>
+        <tr>
+            <td class="padding border-right" width="50%"><h1>ДОГОВОР</h1></td>
+            <td class="padding border-left" width="50%"><h1>CONTRACT</h1></td>
+        </tr>
+        <tr>
+            <td class="padding border-right" width="50%">Днес ${DATE} в гр. Поморие между:</td>
+            <td class="padding border-left" width="50%">Today, ${DATE} in the town of Pomorie, by and between:</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">1. <strong>${NAMES}</strong>, с постоянен адрес <strong>${ADDRESSES}</strong>, с ел. адрес за кореспонденция ${EMAILS}, като собственик на Апартамент № <strong>${APARTMENT}</strong> в сграда ${BUILDINGNAME-BG}, в комплекс „Сънсет Ризорт“ град Поморие, наричан <strong>СОБСТВЕНИК</strong> от една страна</td>
+            <td class="border-left" width="50%">1. <strong>${NAMES}</strong>, permanent address <strong>${ADDRESSES}</strong>, email address for communication ${EMAILS}, being the owner of Apartment No. <strong>${APARTMENT}</strong> in building ${BUILDINGNAME}, in Sunset Resort complex, Pomorie, hereinafter referred to as the <strong>OWNER</strong>, as the first party</td>
+        </tr>
+        <tr>
+            <td class="padding border-right" width="50%">И</td>
+            <td class="padding border-left" width="50%">AND</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">2. <strong>СЪНСЕТ РИЗОРТ МЕНИДЖМЪНТ ЕООД</strong>, със седалище и адрес на управление: ул. “Княз Борис I“ №219, 8201, Поморие, България, вписано в ТР при Агенцията по вписванията в Република България с ЕИК 147026266, с ел. адрес за кореспонденция: management@sunseresort.bg, представлявано от управителя ТОДОР ПАНАЙОТОВ, с ЕГН 5509130609 наричано <strong>ДРУЖЕСТВОТО</strong> от друга страна, се сключи следния договор за следното:</td>
+            <td class="border-left" width="50%">2. <strong>SUNSET RESORT MANAGEMENT LTD</strong>, a sole-owner limited liability with seat and address of registered office: 219 Kniaz Boris I St, 8200 Pomorie, duly registered with the Commerce Register of the Registry Agency in the Republic of Bulgaria with Unique Identity Number (UIN) 147026266,  email address for communication: management@sunseresort.bg represented by Todor Panayotov, personal number: ЕГН 5509130609, hereinafter referred to as the <strong>COMPANY</strong>, as the second party, signed this contract where the parties agreed on the following:</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%"><strong>Чл.1. ДРУЖЕСТВОТО</strong> предоставя на <strong>СОБСТВЕНИКА</strong> за временно, възмездно ползване всички външни басейни на територията на комплекс „Сънсет Ризорт“, разположени в поземлени имоти с идентификатори № 57491.509.24 и №57491.509.1 в град Поморие, в който курортен комплекс се намира имота на <strong>СОБСТВЕНИКА</strong>, при условията на настоящия договор.</td>
+            <td class="border-left" width="50%"><strong>Art.1</strong> The <strong>COMPANY</strong> shall provide to the <strong>OWNER</strong> for temporary, paid use all outside swimming pools on the territory of Sunset Resort complex, situated in plots of land with identity  No. 57491.509.24 and No. 57491.509.1 in the town of Pomorie, where the property of the <strong>OWNER</strong> is located, under the terms and conditions of this contract.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%"><strong>Чл.2, ал.1. СОБСТВЕНИКЪТ</strong> се задължава, за ползването на всички външни басейни на територията на к-с „Сънсет Ризорт“ в град Поморие, за периода от 01.05.2021г. до 30.09.2021г., да заплати на <strong>ДРУЖЕСТВОТО</strong> сумата в размер на <strong>${POOL_TAX} лева</strong> – ежегодна годишна такса, платима в срок до 20.05.2021 г.</td>
+            <td class="border-left" width="50%"><strong>Art.2, par.1</strong> <strong>OWNER</strong> shall pay the <strong>COMPANY</strong> for the use of  all outside swimming pools on the territory of Sunset Resort complex in the town of Pomorie, for the period from 01.05.2021 till 30.09.2021, the amount of <strong>${POOL_TAX} BGN</strong>, due and payable not later than 20.05.2021.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%"><strong>Ал.2.</strong> Дължимите по настоящия договор суми се плащат по следната банкова сметка:<br>Банка: Първа инвестиционна банка АД<br>Адрес: бул. “Драган Цанков“ №37, гр.София 1797<br>IBAN в лева: BG89FINV91501017377495<br>BIC/SWIFT: FINVBGSF<br>Получател: Сънсет Ризорт Мениджмънт ЕООД</td>
+            <td class="border-left" width="50%"><strong>Par. 2</strong> All amounts due and payable under this contract shall be paid into the following bank account:<br>Bank: Firs Investment Bank Plc<br>Address: 37 Dragan Tsankov Blvd, 1797 Sofia<br>IBAN in BGN: BG89FINV91501017377495<br>BIC: FINVBGSF<br>Beneficiary: Sunset Resort Management Ltd</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%"><strong>Чл.3, ал.1.</strong> Срещу платената от <strong>СОБСТВЕНИКА</strong> сума посочена в чл.2 от договора, същият има право и получава ${POOL_BRACELETS} броя гривни с дигитален чип за времето на престоя си в апартамента, като възрастта на ползвателя е без значение (от 0 до 99 години). В случай, че <strong>СОБСТВЕНИКЪТ</strong> желае да получи допълнителни гривни за този престой над посочената бройка от ${POOL_BRACELETS}, то същият следва да заплати по 20,00 лева на ден за всяка допълнителна гривна.</td>
+            <td class="border-left" width="50%"><strong>Art.3, par.1</strong> In exchange of the amount paid by the <strong>OWNER</strong> agreed in art.2 of this contract, he/she shall have the right to receive ${POOL_BRACELETS} digital bracelets with chip for the time of his stay in his apartment; irrespective of the age of the user (0 - 99 years). If, the <strong>OWNER</strong> wants to receive additional bracelets for his/her stay over the said number of ${POOL_BRACELETS} bracelets, he/she shall pay 20.00 BGN per day for each additional bracelet.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%"><strong>Ал.2.</strong> С цел определяне престоя на <strong>СОБСТВЕНИКА</strong> в имота си и определяне броя на гривните, които желае да получи, същият се задължава да извърши регистрация при пристигането си и преди настаняването си в имота, както и да посочи, кои точно лица ще получат гривни за достъп до басейните. Регистрацията се извършва на рецепция Собственици в сграда Сигма, етаж минус 1 в к-с „Сънсет Ризорт“ град Поморие.</td>
+            <td class="border-left" width="50%"><strong>Par.2</strong> For the purpose of calculating the number of days of stay of the <strong>OWNER</strong> in his/her apartment and the respective number of bracelets, which he/she wants to receive, he/she shall check in upon arrival and prior to being accommodated in the property, and specify the persons who will receive bracelets allowing access to the swimming pools. Check-in will be made at the Owners Reception in Sigma Building, floor minus 1, in Sunset Resort complex, Pomorie.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%"><strong>Ал.3.</strong> След получаването на гривните за достъп до басейните, посочените от <strong>СОБСТВЕНИКА</strong> лица нямат право да ги свалят от ръцете си, както и нямат право да предоставят за ползване получените гривни на трети лица за времето на престоя си в комплекса.</td>
+            <td class="border-left" width="50%"><strong>Par.3</strong> After receiving the bracelets allowing access to the swimming pools, the persons appointed by the <strong>OWNER</strong> may not take them off their wrists and may not give them to be used by third parties for the time of their stay in the complex.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">&nbsp;</td>
+            <td class="border-left" width="50%">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<table class="break" cellspacing="0" cellpadding="0" width="100%">
+    <tbody>
+        <tr>
+            <td colspan="2" class="padding text-center" width="100%"><strong class="border-bottom font-size-8">ПОДПИСИ / SIGNATURES</strong></td>
+        </tr>
+        <tr>
+            <td class="padding text-center" width="50%">----------------------------------------------------------<br>За <strong>Собственика</strong> / For the <strong>Owner</strong></td>
+            <td class="padding text-center" width="50%">----------------------------------------------------------<br>За <strong>Дружеството</strong> / For the <strong>Company</strong></td>
+        </tr>
+        <tr>
+            <td class="text-center font-size-8" width="50%">Страница <strong>1</strong> от <strong>2</strong></td>
+            <td class="text-center font-size-8" width="50%">Page <strong>1</strong> of <strong>2</strong></td>
+        </tr>
+    </tbody>
+</table>
+<table class="border" cellspacing="0" cellpadding="0" width="100%">
+    <tbody>
+        <tr>
+            <td class="padding border-right" width="50%"><strong>Чл.4. СОБСТВЕНИКЪТ</strong> няма право да запазва места и да резервира шезлонги около външните басейни на територията на к-с „Сънсет Ризорт“ в град Поморие.</td>
+            <td class="padding border-left" width="50%"><strong>Art.4</strong> The <strong>OWNER</strong> may not keep seats and reserve chaise lounges  around the outside swimming pools on the territory of Sunset Resort complex, Pomorie.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%"><strong>Чл.5.</strong> Срещу заплатената от <strong>СОБСТВЕНИКА</strong> сума посочена в чл.2 от договора, <strong>ДРУЖЕСТВОТО</strong> му предоставя свободен достъп до всички външни басейни на територията на к-с „Сънсет Ризорт“ в град Поморие, при условията на настоящия договор.</td>
+            <td class="border-left" width="50%"><strong>Art.5</strong> In exchange of the amount paid by the <strong>OWNER</strong> agreed in art.2 of this contract, the <strong>COMPANY</strong> shall provide to him/her free access to all  outside swimming pools on the territory of Sunset Resort complex in the town of Pomorie, under the terms and conditions of this contract.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%"><strong>Чл.6. ДРУЖЕСТВОТО</strong> не гарантира и няма задължение да осигурява свободни шезлонги и чадър.</td>
+            <td class="border-left" width="50%"><strong>Art.6</strong> The <strong>COMPANY</strong> will not guarantee and is not obliged to provide free chaise lounges and sunshades.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%"><strong>Чл.7.</strong> При прекратяване на настоящия договор и/или изтичане на срока му, <strong>ДРУЖЕСТВОТО</strong> преустановява изпълнение на задълженията си по него.</td>
+            <td class="border-left" width="50%"><strong>Art.7</strong> With the termination of this contract and/or expiry of its term, the <strong>COMPANY</strong> will stop fulfilling its obligations under it.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">Настоящия договор се подписа в два еднообразни екземпляра, по един за всяка от страните по него.</td>
+            <td class="border-left" width="50%">This contract was signed in two counterparts, one for each of the parties under it.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">&nbsp;</td>
+            <td class="border-left" width="50%">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<table cellspacing="0" cellpadding="0" width="100%">
+    <tbody>
+        <tr>
+            <td colspan="2" class="padding text-center" width="100%"><strong class="border-bottom font-size-8">ПОДПИСИ / SIGNATURES</strong></td>
+        </tr>
+        <tr>
+            <td class="padding text-center" width="50%">----------------------------------------------------------<br>За <strong>Собственика</strong> / For the <strong>Owner</strong></td>
+            <td class="padding text-center" width="50%">----------------------------------------------------------<br>За <strong>Дружеството</strong> / For the <strong>Company</strong></td>
+        </tr>
+        <tr>
+            <td class="text-center font-size-8" width="50%">Страница <strong>2</strong> от <strong>2</strong></td>
+            <td class="text-center font-size-8" width="50%">Page <strong>2</strong> of <strong>2</strong></td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="bg">
+<head dir="ltr">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>РЕЗЕРВАЦИОННА ФОРМА # ${ID} - ${OWNER}</title>
+    <style type="text/css">
+        body {
+            font-family: 'DejaVu Sans';
+            font-size: 14px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: normal;
+            font-size: 20px;
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+            margin-bottom: 20px;
+        }
+
+        table th,
+        table td {
+            padding: 2px 5px;
+            vertical-align: top;
+            border: 1px solid #ddd;
+        }
+
+        table thead th {
+            border-bottom: 2px solid #ddd;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .table-caption {
+            background-color: #deeaf6;
+        }
+
+        .table-header {
+            background-color: #f2f2f2;
+        }
+
+        .no-border {
+            border: none;
+        }
+
+        .no-border th,
+        .no-border td {
+            border: none;
+        }
+
+        .note {
+            font-weight: bold;
+            font-size: 11px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<p class="text-center"><img width="149" height="100" src="${LOGO}" alt="Sunset Resort Logo"></p>
+
+<h1>РЕЗЕРВАЦИОННА ФОРМА # <strong>${ID} - ${OWNER}</strong></h1>
+
+<table cellspacing="0" cellpadding="5" width="100%">
+    <thead>
+        <tr class="table-caption">
+            <th colspan="5">ДЕТАЙЛИ НА АПАРТАМЕНТА</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="table-header">
+            <td width="20%" class="text-center">Сграда</td>
+            <td width="20%" class="text-center">Номер</td>
+            <td width="20%" class="text-center">Вид</td>
+            <td width="20%" class="text-center">Обзавеждане</td>
+            <td width="20%" class="text-center">Изглед</td>
+        </tr>
+        <tr>
+            <td width="20%" class="text-center"><strong>${BUILDING}</strong></td>
+            <td width="20%" class="text-center"><strong>${APARTMENT}</strong></td>
+            <td width="20%" class="text-center"><strong>${TYPE}</strong></td>
+            <td width="20%" class="text-center"><strong>${FURNITURE}</strong></td>
+            <td width="20%" class="text-center"><strong>${VIEW}</strong></td>
+        </tr>
+    </tbody>
+</table>
+
+<table cellspacing="0" cellpadding="5" width="100%">
+    <thead>
+        <tr class="table-caption">
+            <th colspan="5">ДОПЪЛНИТЕЛНА ИНФОРМАЦИЯ</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="table-header">
+            <td width="20%" class="text-center">Договор за наем</td>
+            <td width="20%" class="text-center">M&M такси</td>
+            <td width="20%" class="text-center">Годишна комунална такса</td>
+            <td width="20%" class="text-center">Ползване на външни басейни</td>
+            <td width="20%" class="text-center">Изключение</td>
+        </tr>
+        <tr>
+            <td width="20%" class="text-center"><strong>${RC}</strong></td>
+            <td width="20%" class="text-center"><strong>${MM}</strong></td>
+            <td width="20%" class="text-center"><strong>${CT}</strong></td>
+            <td width="20%" class="text-center"><strong>${PU}</strong></td>
+            <td width="20%" class="text-center"><strong>${EX}</strong></td>
+        </tr>
+    </tbody>
+</table>
+
+<table cellspacing="0" cellpadding="5" width="100%">
+    <thead>
+        <tr class="table-caption">
+            <th colspan="4">ИНФОРМАЦИЯ ЗА САМОЛЕТНИ ПОЛЕТИ</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="table-header">
+            <td width="50%" colspan="2" class="text-center">Пристигане</td>
+            <td width="50%" colspan="2" class="text-center">Напускане</td>
+        </tr>
+        <tr>
+            <td width="25%" class="text-right">Дата</td>
+            <td width="25%"><strong>${ADATE}</strong></td>
+            <td width="25%" class="text-right">Дата</td>
+            <td width="25%"><strong>${DDATE}</strong></td>
+        </tr>
+        <tr>
+            <td width="25%" class="text-right">Номер на полета</td>
+            <td width="25%"><strong>${AFLIGHT}</strong></td>
+            <td width="25%" class="text-right">Номер на полета</td>
+            <td width="25%"><strong>${DFLIGHT}</strong></td>
+        </tr>
+        <tr>
+            <td width="25%" class="text-right">Летище</td>
+            <td width="25%"><strong>${AAIRPORT}</strong></td>
+            <td width="25%" class="text-right">Летище</td>
+            <td width="25%"><strong>${DAIRPORT}</strong></td>
+        </tr>
+        <tr>
+            <td width="25%" class="text-right">Трансфер</td>
+            <td width="25%"><strong>${ATRANSFER}</strong></td>
+            <td width="25%" class="text-right">Трансфер</td>
+            <td width="25%"><strong>${DTRANSFER}</strong></td>
+        </tr>
+    </tbody>
+</table>
+
+<table cellspacing="0" cellpadding="5" width="100%">
+    <thead>
+        <tr class="table-caption">
+            <th colspan="2">ИНФОРМАЦИЯ ЗА ГОСТИТЕ</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="table-header">
+            <td width="50%" class="text-center">Възрастни: <strong>${ADULTS}</strong></td>
+            <td width="50%" class="text-center">Деца (до 12 години): <strong>${CHILDREN}</strong></td>
+        </tr>
+        <!--guests-start-->
+        <tr>
+            <td width="50%"><strong>${ADULT}</strong></td>
+            <td width="50%"><strong>${CHILD}</strong></td>
+        </tr>
+        <!--guests-end-->
+    </tbody>
+</table>
+
+<!--services-start-->
+<table cellspacing="0" cellpadding="5" width="100%">
+    <thead>
+        <tr class="table-caption">
+            <th>РАЗХОДИ / УСЛУГИ</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>${SERVICES}</td>
+        </tr>
+    </tbody>
+</table>
+<!--services-end-->
+
+<!--remarks-start-->
+<table cellspacing="0" cellpadding="5" width="100%">
+    <thead>
+        <tr class="table-caption">
+            <th>БЕЛЕЖКИ</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>${REMARKS}</td>
+        </tr>
+    </tbody>
+</table>
+<!--remarks-end-->
+
+<table class="no-border" cellspacing="0" cellpadding="5" width="100%">
+    <tbody>
+        <tr>
+            <td>${DATE}</td>
+            <td class="note">${NOTE}</td>
+            <td class="text-right">${USER}</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+.auth-wrapper {
+    position: absolute;
+    top: 5em; /* 80/16 */
+    left: 50%;
+    width: 320px;
+    margin-left: -160px;
+    background-color: $gray-lighter;
+    @include gradient-vertical($start-color: #fff, $end-color: $gray-lighter, $start-percent: 0%, $end-percent: 100%);
+    border: 1px solid #ddd;
+    border-radius: 0.3125em; /* 5/16 */
+    padding: 1.25em; /* 20/16 */
+    text-align: center; /* for the image */
+    @include box-shadow(0 6px 12px rgba(0,0,0,.175));
+
+    .btn {
+        white-space: normal;
+    }
+
+    > .languages-wrapper {
+        margin-top: ($line-height-computed / 2);
+    }
+
+    > .auth-box {
+        form {
+            text-align: left;
+        }
+
+        > h1 {
+            font-size: $font-size-h3;
+            margin-top: 0.9375em; /* 15/16 */
+        }
+
+        > p {
+            margin: ($line-height-computed / 2) 0 0;
+
+            > a {
+                color: $brand-secondary;
+            }
+        }
+    }
+}

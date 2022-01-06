@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head dir="ltr">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rental Contract</title>
+    <style type="text/css">
+        html {
+            margin: 50px 50px 20px 50px;
+        }
+
+        body {
+            font-family: 'DejaVu Sans';
+            font-size: 10px;
+            line-height: 0.85em;
+        }
+
+        .font-size-7 {
+            font-size: 7px;
+        }
+
+        .font-size-8 {
+            font-size: 8px;
+        }
+
+        .font-size-12 {
+            font-size: 12px;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            font-size: 11px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+            padding: 0;
+        }
+
+        .break {
+            page-break-after: always;
+        }
+
+        table tr td {
+            vertical-align: top;
+            padding: 0 10px;
+            line-height: 0.85em;
+        }
+
+        td.padding {
+            padding: 10px;
+        }
+
+        .border {
+            border: 1px solid #000;
+        }
+
+        .border-right {
+            border-right: 1px solid #000;
+        }
+
+        .border-left {
+            border-left: 1px solid #000;
+        }
+
+        .border-bottom {
+            border-bottom: 1px solid #000;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<table class="border" cellspacing="0" cellpadding="0" width="100%">
+    <tbody>
+        <tr>
+            <td class="padding border-right" width="50%"><h1>ДОГОВОР ЗА НАЕМ</h1></td>
+            <td class="padding border-left" width="50%"><h1>RENT CONTRACT</h1></td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">Днес ${DATE} се сключи следния договор за наем (“Договора”) между:</td>
+            <td class="border-left" width="50%">Today ${DATE} the following rent contract (the “Contract”) was made by and between:</td>
+        </tr>
+        <tr>
+            <td class="padding border-right" width="50%"><strong>${NAMES}</strong>, с адрес <strong>${ADDRESSES}</strong>, наричани(а) по-долу “Наемодател”, от първата страна,</td>
+            <td class="padding border-left" width="50%"><strong>${NAMES}</strong>, having address <strong>${ADDRESSES}</strong>, hereinafter referred to as “Landlord”, a party to the first part,</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">И</td>
+            <td class="border-left" width="50%">And</td>
+        </tr>
+        <tr>
+            <td class="padding border-right" width="50%"><strong>${COMPANY-BG}</strong>, ЕИК ${BULSTAT}, със седалище и адрес на управление в ${ADDRESS-BG}, представлявано от управителя ${MANAGER-BG}, с ЕГН ${EGN}, и л.к. №${PASSPORT}, наричано по-долу за краткост в договора Наемател,</td>
+            <td class="padding border-left" width="50%"><strong>${COMPANY}</strong>, company identity number ${BULSTAT}, with the following seat and registered address: ${ADDRESS}, represented by its Manager ${MANAGER}, personal identity number ${EGN}, ID No. ${PASSPORT}, called hereinafter in the contract for short the Tenant,</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">Страните постигнаха съгласие по следното:</td>
+            <td class="border-left" width="50%">The parties hereto agreed as follows:</td>
+        </tr>
+        <tr>
+            <td class="padding border-right" width="50%"><h1>1. ПРЕДМЕТ НА ДОГОВОРА</h1></td>
+            <td class="padding border-left" width="50%"><h1>1. SUBJECT OF THE CONTRACT</h1></td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">1.1. Наемодателят${1.1-BG} се задължава да предостави на Наемателя ползването на следния свой недвижим имот – апартамент № <strong>${APARTMENT}</strong> (“Апартамента”), находящ се в комплекс Сънсет Ризорт, Поморие срещу задължението на Наемателя да му заплаща наемна цена в срок и при условия, определени в този Договор.</td>
+            <td class="border-left" width="50%">1.1. The Landlord${1.1} to the Tenant the following real estate owned by the Landlord – apartment <strong>${APARTMENT}</strong> (the “Apartment”), located in Sunset Resort complex, Pomorie in exchange of the obligation of the Tenant to pay the Landlord the rent price under terms and conditions determined in this Contract.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">1.2. Наемателят има право да използва Апартамента за жилищни нужди и/или за осъществяване с него на туристически дейности по смисъла на Закона за туризма.</td>
+            <td class="border-left" width="50%">1.2. The Tenant shall be entitled to use the Apartment for residential purposes and/or for performance of tourist activities in the meaning under the Law on tourism.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">1.3. Наемателят има право${1.3-BG} свободно да преотдава под наем Апартамента на трети лица при условия и наемна цена каквито договори, както и да им прехвърля част или всичките си права по този Договор.</td>
+            <td class="border-left" width="50%">1.3. The Tenant shall be entitled${1.3} to freely sub-rent the Apartment to third parties under terms and conditions at his/her discretion and transfer them all and any of its rights under this Contract.</td>
+        </tr>
+        <tr>
+            <td class="padding border-right" width="50%"><h1>2. НАЕМНА ЦЕНА. НАЧИН НА ПЛАЩАНЕ</h1></td>
+            <td class="padding border-left" width="50%"><h1>2. RENT PRICE. MODE OF PAYMENT</h1></td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">2.1. За ползването на Апартамента Наемателят ще заплати на Наемодателя наемна цена, в размер на <strong>€ ${RENT}</strong>, която ще бъде заплатена съгласно последващите разпоредби:</td>
+            <td class="border-left" width="50%">2.1. In exchange for the use of the Apartment, the Tenant shall pay the Landlord a total rental amount of <strong>€ ${RENT}</strong> which will be paid as follows:</td>
+        </tr>
+        ${2}
+        <tr>
+            <td class="padding border-right" width="50%"><h1>3. СРОК НА ДОГОВОРА</h1></td>
+            <td class="padding border-left" width="50%"><h1>3. TERM OF THE CONTRACT</h1></td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">${3.1-BG}</td>
+            <td class="border-left" width="50%">${3.1}</td>
+        </tr>
+        ${PAGE-BREAK1}
+        ${3.2}
+        <tr>
+            <td class="padding border-right" width="50%"><h1>4. ЗАДЪЛЖЕНИЯ НА НАЕМАТЕЛЯ</h1></td>
+            <td class="padding border-left" width="50%"><h1>4. OBLIGATIONS OF THE TENANT</h1></td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">4.1. Наемателят е длъжен да заплаща наемната цена, в срока, при условията и по реда, определени в раздел 2 на Договора.</td>
+            <td class="border-left" width="50%">4.1. The Tenant shall pay the total rent price in a manner and under the terms and conditions fixed in section 2 of this Contract.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">4.2. Наемателят е длъжен да плаща по банков път и за сметка на Наемодателя дължимите от Наемодателя към Управителя на етажната собственост суми.</td>
+            <td class="border-left" width="50%">4.2. The Tenant shall pay by bank transfer on behalf of the Landlord, the fees owed by the Landlord to the Manager of the Condominium.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">4.3. Наемателят е длъжен да заплаща разноските свързани с ползването на Апартамента (напр. ток, вода, почистване, сателитна телевизия, интернет, др. под.).</td>
+            <td class="border-left" width="50%">4.3. The Tenant shall pay the costs related to the use of the Apartment (eg. electricity, water, cleaning, tv, internet and any other) for the tourists they accommodate.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">4.4. ${4.4-BG}</td>
+            <td class="border-left" width="50%">4.4. ${4.4}</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">4.5. ${4.5-BG}</td>
+            <td class="border-left" width="50%">4.5. ${4.5}</td>
+        </tr>
+        ${4.6}
+        ${4.7}
+        <tr>
+            <td class="padding border-right" width="50%"><h1>5. ЗАДЪЛЖЕНИЯ НА НАЕМОДАТЕЛЯ</h1></td>
+            <td class="padding border-left" width="50%"><h1>5. OBLIGATIONS OF THE LANDLORD</h1></td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">5.1. Наемодателят е длъжен да предаде на Наемателя Апартамента в състояние, отговарящо на ползването, за което е нает и изцяло обзаведен. Наемодателят е длъжен да осигури доброто състояние на имота в срока на договора и за периода на ползването за което е нает под наем. В случай, че по времето на действие на този договор бъде установен технически проблем или неизправност на апартамента като цяло (оборудване, части от техническата инсталация в апартамента, течове и пр.) които възпрепятстват използването на апартамента за целта на този договор, то тези проблеми трябва да бъдат отстранени възможно най-бързо (в рамките на 10 дена от установяването и уведомяването на Наемодателя) от Наемодателя за негова сметка. В случай, че това не бъде направено в указаният срок и по необходимият начин, Наемателят има право едностранно да прекрати настоящият договор с едноседмично предизвестие и да търси обезщетение от Наемодателя за пропуснатите ползи от тези обстоятелства.</td>
+            <td class="border-left" width="50%">5.1. The Landlord shall deliver the Apartment to the Tenant in a condition suitable for its intended use for which it is rented will all furniture and equipment. The Landlord shall secure the good condition of the property for the duration of the contract and for the period of use for which it is rented. If during the time of the contract there is a technical problem or any defect is found in the apartment in general (equipment, parts of the technical installations on the apartment, leakages, etc.) which obstruct the use of the apartment for the goals and objectives of this contract, then such problems shall be solved as soon as possible (within10 days from the date they are found and the Landlord is notified) by the Landlord on his personal account. If he fails to do that within the instructed deadlines and manner, the Tenant may terminate this contract unilaterally with one-week prior notice and claim compensations from the Landlord for missed profit resulting from that situation.</td>
+        </tr>
+        ${PAGE-BREAK2-2}
+        <tr>
+            <td class="border-right" width="50%">5.2. Наемодателят е длъжен да осигури свободното и необезпокояваното ползване на Апартамента от Наемателя и пренаемателите, съобразно договорените начини на ползването му. Наемодателят е длъжен да предаде всички ключове за апартамента на Наемателя.</td>
+            <td class="border-left" width="50%">5.2. The Landlord shall ensure free and undisturbed use of the Apartment by the Tenant and its sub-tenants, in accordance with the contracted purposes of its use. The Landlord shall give the Tenant all sets of keys for the apartment.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">5.3. Наемодателят е длъжен да уведоми Наемателя писмено поне тридесет (30) дни преди разпореждане с Апартамента.</td>
+            <td class="border-left" width="50%">5.3. The Landlord is obliged to notify the Tenant in writing at least thirty (30) days in advance, in case of disposal with the Apartment.</td>
+        </tr>
+        ${PAGE-BREAK2-1}
+        ${5-4-5-6}
+        <tr>
+            <td class="padding border-right" width="50%"><h1>6. ПРЕКРАТЯВАНЕ НА ДОГОВОРА</h1></td>
+            <td class="padding border-left" width="50%"><h1>6. TERMINATION OF THE CONTRACT</h1></td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">6.1. Този Договор се прекратява само при наличие на което и да е от следните обстоятелства:</td>
+            <td class="border-left" width="50%">6.1. This Contract will be terminated only if occur any of the following conditions:</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">6.1.1. При промяна в собствеността на обекта на този Договор. В този случай, за дата на прекратяването се счита датата на Нотариалния акт, удостоверяващ промяната в собствеността. В случай, че не е спазено предизвестието от чл.5.3, за дата на прекратяване на договора се счита 30 дни след датата на нотариалният акт с който е сменена собствеността на апартамента.</td>
+            <td class="border-left" width="50%">6.1.1. In case of change of the ownership of the object of this Contract. In this case, the date of the termination will be considered the date of the title deed certifying the change in ownership. In case the advance notice stated in art 5.3 is not made, for the date of termination of this agreement will be considered 30 days after the date of the title deed for changing the ownership of the apartment.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">6.1.2. С изтичане на срока на договора.</td>
+            <td class="border-left" width="50%">6.1.2. With the expiry of the term of the Contract.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">6.2. В случай на прекратяване на договора от страна на Наемодателя, без значение от основанието за прекратяването му, Наемателят не дължи на Наемодателя наем за текущата календарна година, по време на която е прекратен договора.</td>
+            <td class="border-left" width="50%">6.2. In case of termination of the Contract by the Landlord, regardless of the reason for the termination, the Landlord shall not receive the rent price for the current year, during which the Contract is terminated.</td>
+        </tr>
+        ${6.3}
+        ${PAGE-BREAK3}
+        <tr>
+            <td class="padding border-right" width="50%"><h1>7. ДРУГИ УГОВОРКИ</h1></td>
+            <td class="padding border-left" width="50%"><h1>7. MISCELLANEOUS</h1></td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">7.1. Към този Договор се прилагат законите на Република България.</td>
+            <td class="border-left" width="50%">7.1. This Contract shall be governed by and construed in accordance with the laws of the Republic of Bulgaria.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">7.2. Всички спорове, неясноти или искания, произтичащи от или отнасящи се до този Договор, неизпълнение по него, прекратяване или недействителност, които не могат да се разрешат по взаимно съгласие ще се отнасят за окончателно разрешаване от компетентния за това български съд.</td>
+            <td class="border-left" width="50%">7.2. Any dispute, controversy or claim arising out of or relating to this Contract or its breach, termination or invalidity which cannot be settled amicably shall be finally settled by the competent Bulgarian court.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">7.3. Настоящият Договор се състави на български и английски език. В случай на противоречие между текст на български и английски език, меродавен ще бъде текста на английски език.</td>
+            <td class="border-left" width="50%">7.3. The present Contract was made in Bulgarian and in English. In case of discrepancies between the Bulgarian and English version the English version shall prevail.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">7.4. Всички съобщения и уведомления между страните следва да бъдат доставени на един или повече от адресите, посочени по-долу:</td>
+            <td class="border-left" width="50%">7.4. All communications between the parties shall be delivered to the one or more of the addresses pointed out below:</td>
+        </tr>
+        <tr>
+            <td class="padding border-right" width="50%">За Наемодателя:<br>Адрес: ${ADDRESSES}<br>E-mail: ${EMAILS}</td>
+            <td class="padding border-left" width="50%">If to the Landlord:<br>Address: ${ADDRESSES}<br>E-mail: ${EMAILS}</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">За Наемателя:<br>Адрес: ${ADDRESS-BG}<br>Факс: 00359 596 32019<br>E-mail: management@sunsetresort.bg</td>
+            <td class="border-left" width="50%">If to the Tenant:<br>Address: ${ADDRESS}<br>Fax: 00359 596 32019<br>E-mail: management@sunsetresort.bg</td>
+        </tr>
+        <tr>
+            <td class="padding border-right" width="50%">Договорът се подписа в два еднообразни екземпляра – по един за всяка от страните по него. Двете страни декларират, че са запознати с клаузите по настоящият Договор и го подписват в пълно съзнание и без чужда намеса.</td>
+            <td class="padding border-left" width="50%">The present contract is prepared in two identical copies, one for each of the parties in it. Both sides declare that they are familiar with the provisions in this contract and sign it in full consciousness and without foreign interference.</td>
+        </tr>
+        ${PAGE-BREAK4}
+        <tr>
+            <td class="padding border-right" width="50%"><h1>СЪГЛАСИЕ ЗА ГЛАСУВАНЕ</h1></td>
+            <td class="padding border-left" width="50%"><h1>VOTING REPRESENTATION</h1></td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">Днес ${DATE}, долуподписаният,</td>
+            <td class="border-left" width="50%">Today ${DATE}, I the undersigned,</td>
+        </tr>
+        <tr>
+            <td class="padding border-right" width="50%"><strong>${OWNER-NAME}</strong>,<br>роден на ............................... в гр. ...............................<br>с адрес ${OWNER-ADDRESS}, в качеството си на собственик на апартамент, № <strong>${APARTMENT}</strong> в сграда ${BUILDINGNAME-BG}, ${BUILDINGDESCRIPTION-BG} в комплекс „Сънсет ризорт”, гр. Поморие,</td>
+            <td class="padding border-left" width="50%"><strong>${OWNER-NAME}</strong>,<br>born on ............................... in ...............................<br>having address ${OWNER-ADDRESS}, in mine capacity as owner of apartment <strong>${APARTMENT}</strong> in block ${BUILDINGNAME} ${BUILDINGDESCRIPTION} in complex “Sunset Resort”, Pomorie</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%"><h1>ДАВАМ СЪГЛАСИЕ:</h1></td>
+            <td class="border-left" width="50%"><h1>AGREE THAT:</h1></td>
+        </tr>
+        <tr>
+            <td class="padding border-right" width="50%">${PROXYNAME-BG}, ${PROXYDETAILS-BG}, собственик на индивидуален обект в сграда ${BUILDINGNAME-BG}, ${BUILDINGDESCRIPTION-BG}, в комплекс „Сънсет ризорт” град Поморие:</td>
+            <td class="padding border-left" width="50%">${PROXYNAME}, ${PROXYDETAILS}, owner of individual object in ${BUILDINGNAME} ${BUILDINGDESCRIPTION} in complex “Sunset Resort” in the town of Pomorie:</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">1. Да ме представлява пред Общите събрания на собствениците в сграда ${BUILDINGNAME-BG}, ${BUILDINGDESCRIPTION-BG}, като той / тя има право да гласува и взема решения от мое име изцяло по негова преценка без ограничение по всички въпроси, които се обсъждат на Общите събрания на собствениците на етажната собственост – извънредни или годишни.</td>
+            <td class="border-left" width="50%">1. To represent me at the General Assembly meetings of the Owners in ${BUILDINGNAME} ${BUILDINGDESCRIPTION}, and he/she shall be entitled to vote to adopt the resolutions on my behalf, at his/her discretion, without limitation on all matters discussed at the General Assembly meetings - annual or other.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">2. Пълномощникът има право да гласува и взема решения от мое име изцяло по негова преценка без ограничение за определяне и събиране на паричната вноска за разходите за управление и поддръжка на общите части.</td>
+            <td class="border-left" width="50%">2. The proxy is entitled to vote and approve decisions on my behalf, at his/her discretion, without limitation for determination of the amount and  the process of collecting the annual MM fee for maintenance and management.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">3. Пълномощникът има право да гласува и взема решения от мое име изцяло по негова преценка без ограничение за определяне и събиране на вноски за Фонд „Ремонт и Обновяване“.</td>
+            <td class="border-left" width="50%">3. The proxy is entitled to vote and approve decisions on my behalf, at his/her discretion, without limitation for determination and process of raising  amounts into “Capital Repair and renovation“ fund (sinking fund).</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">4. Пълномощникът има право да гласува и взема решения от мое име изцяло по негова преценка без ограничение за разпореждане и използване на средствата събрани във Фонд „Ремонт и Обновяване“.</td>
+            <td class="border-left" width="50%">4. The proxy is entitled to vote and approve decisions on my behalf, at his/her discretion, without limitation for spending and using amounts from fund “Capital Repair and renovation“ (sinking fund).</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">5. Настоящото отменя всякакви други пълномощни дадени в този смисъл на други лица.</td>
+            <td class="border-left" width="50%">5. This supersedes any other voting representations in effect, given to other parties.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">6. Настоящето съгласие важи до ${EXPIRY}г.</td>
+            <td class="border-left" width="50%">6. This agreement expires on ${EXPIRY}.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">7. Това пълномощно е невалидно в случай, че Собственика присъства на ОС.</td>
+            <td class="border-left" width="50%">7. The proxy is not entitled with voting representation in case the apartment owner is present at the AGM.</td>
+        </tr>
+        <tr>
+            <td class="padding border-right" width="50%">Текстът на настоящото съгласие да се тълкува разширително и в полза на упълномощеното лице.</td>
+            <td class="padding border-left" width="50%">The text of this agreement is to be accepted extensively in a favor of the person representing the owner.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">Настоящото съгласие се състави на български и английски език. В случай на противоречие между текста на български и английски език, меродавен ще бъде текста на английски език.</td>
+            <td class="border-left" width="50%">The present agreement is made in Bulgarian and in English. In case of discrepancies between the Bulgarian and English version the English version shall prevail.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">&nbsp;</td>
+            <td class="border-left" width="50%">&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="padding text-center border-right" width="50%">----------------------------------------------------------</td>
+            <td class="padding text-center border-left" width="50%">----------------------------------------------------------</td>
+        </tr>
+        <tr>
+            <td class="text-center border-right" width="50%">СОБСТВЕНИК НА АПАРТАМЕНТ</td>
+            <td class="text-center border-left" width="50%">APARTMENT OWNER</td>
+        </tr>
+        <tr>
+            <td class="padding text-center border-right font-size-7" width="50%"><strong>МОЛЯ НАПИШЕТЕ ПЪЛНОТО СИ ИМЕ</strong></td>
+            <td class="padding text-center border-left font-size-7" width="50%"><strong>PLEASE PRINT FULL NAME</strong></td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">&nbsp;</td>
+            <td class="border-left" width="50%">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

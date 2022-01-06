@@ -1,0 +1,149 @@
+.multiselectWrapper {
+    position: relative;
+
+    .multiselect-state-disabled {
+        opacity: .35;
+    }
+
+    > button {
+        text-align: left;
+
+        &.multiselect-state-active {
+            background-color: darken($btn-default-bg, 10%);
+        }
+
+        > .caret {
+            position: absolute;
+            top: 0;
+            right: 0.625em; /* 10/16 */
+            bottom: 0;
+            left: auto;
+            margin: auto;
+            border-width: $caret-width-large $caret-width-large 0;
+        }
+    }
+
+    > section {
+        border: 1px solid $btn-default-border;
+
+        &:after {
+            position: absolute;
+            content: "";
+            bottom: -1.25em; /* 20/16 */
+            height: 1.25em; /* 20/16 */
+            width: 1px;
+        }
+
+        &.multiselect-single {
+            > ul {
+                input {
+                    left: -9999px;
+                }
+
+                label {
+                    padding: 0.3125em 0.625em;  /* 5/16 */ /* 10/16 */
+                    border: 1px solid transparent;
+
+                    &.multiselect-state-selected {
+                        border: 1px solid $brand-primary;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        &.dropdown-menu {
+            background-color: #fff;
+        }
+
+        & {
+            > header {
+                border-bottom: 1px solid $gray-lighter;
+                @include clearfix;
+
+                > ul {
+                    @include clearfix;
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0.3125em 0 0.3125em 0.3125em; /* 5/16 */
+
+                    > li {
+                        float: left;
+                        padding-right: 0.625em; /* 10/16 */
+
+                        &.multiselect-close {
+                            float: right;
+                            text-align: right;
+                            padding-right: 0.125em; /* 2/16 */
+
+                            span {
+                                margin-right: 0;
+                            }
+                        }
+
+                        > a {
+                            text-decoration: none;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+
+                > .multiselect-filter {
+                    padding: 0.3125em; /* 5/16 */
+                }
+            }
+
+            > ul {
+                overflow-y: auto;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+
+                > li {
+                    &.multiselect-optgroup {
+                        text-align: center;
+                        font-weight: bold;
+                        border-top:1px solid #ddd;
+                        border-bottom:1px solid #ddd;
+
+                        &.selected {
+                            background-color: $gray-lighter;
+                        }
+
+                        &.disabled {
+                            &,
+                            & > a {
+                                cursor: not-allowed;
+                            }
+                        }
+
+                        a {
+                            display: block;
+                            padding: 0.125em 0.3125em; /* 2/16 */ /* 5/16 */
+                            margin: 1px 0;
+                            text-decoration: none;
+                            color: $brand-primary;
+                        }
+                    }
+
+                    > label {
+                        display: block;
+                        padding: 0.3125em 0 0.3125em 1.875em; /* 5/16 */ /* 30/16 */
+
+                        &.selected {
+                            background-color: $brand-primary;
+                            color: #fff;
+
+                            > span {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

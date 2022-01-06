@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head dir="ltr">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rental Contract</title>
+    <style type="text/css">
+        html {
+            margin: 50px 50px 20px 50px;
+        }
+
+        body {
+            font-family: 'DejaVu Sans';
+            font-size: 11px;
+            line-height: 1em;
+        }
+
+        .font-size-7 {
+            font-size: 7px;
+        }
+
+        .font-size-8 {
+            font-size: 8px;
+        }
+
+        .font-size-12 {
+            font-size: 12px;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            font-size: 11px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+            padding: 0;
+        }
+
+        .break {
+            page-break-after: always;
+        }
+
+        table tr td {
+            vertical-align: top;
+            padding: 0 10px;
+            line-height: 1em;
+        }
+
+        td.padding {
+            padding: 10px;
+        }
+
+        .border {
+            border: 1px solid #000;
+        }
+
+        .border-right {
+            border-right: 1px solid #000;
+        }
+
+        .border-left {
+            border-left: 1px solid #000;
+        }
+
+        .border-bottom {
+            border-bottom: 1px solid #000;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<table class="border" cellspacing="0" cellpadding="0" width="100%">
+    <tbody>
+        <tr>
+            <td class="padding border-right" width="50%"><h1>СЪГЛАСИЕ ЗА ГЛАСУВАНЕ</h1></td>
+            <td class="padding border-left" width="50%"><h1>VOTING REPRESENTATION</h1></td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">Днес ${DATE}, долуподписаният,</td>
+            <td class="border-left" width="50%">Today ${DATE}, I the undersigned,</td>
+        </tr>
+        <tr>
+            <td class="padding border-right" width="50%"><strong>${OWNER-NAME}</strong>,<br>роден на ............................... в гр. ...............................<br>с адрес ${OWNER-ADDRESS}, в качеството си на собственик на апартамент, № <strong>${APARTMENT}</strong> в сграда ${BUILDINGNAME-BG}, ${BUILDINGDESCRIPTION-BG} в комплекс „Сънсет ризорт”, гр. Поморие,</td>
+            <td class="padding border-left" width="50%"><strong>${OWNER-NAME}</strong>,<br>born on ............................... in ...............................<br>having address ${OWNER-ADDRESS}, in mine capacity as owner of apartment <strong>${APARTMENT}</strong> in block ${BUILDINGNAME} ${BUILDINGDESCRIPTION} in complex “Sunset Resort”, Pomorie</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%"><h1>ДАВАМ СЪГЛАСИЕ:</h1></td>
+            <td class="border-left" width="50%"><h1>AGREE THAT:</h1></td>
+        </tr>
+        <tr>
+            <td class="padding border-right" width="50%">${PROXYNAME-BG}, ${PROXYDETAILS-BG}, собственик на индивидуален обект в сграда ${BUILDINGNAME-BG}, ${BUILDINGDESCRIPTION-BG}, в комплекс „Сънсет ризорт” град Поморие:</td>
+            <td class="padding border-left" width="50%">${PROXYNAME}, ${PROXYDETAILS}, owner of individual object in ${BUILDINGNAME} ${BUILDINGDESCRIPTION} in complex “Sunset Resort” in the town of Pomorie:</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">1. Да ме представлява пред Общите събрания на собствениците в сграда ${BUILDINGNAME-BG}, ${BUILDINGDESCRIPTION-BG}, като той / тя има право да гласува и взема решения от мое име изцяло по негова преценка без ограничение по всички въпроси, които се обсъждат на Общите събрания на собствениците на етажната собственост – извънредни или годишни.</td>
+            <td class="border-left" width="50%">1. To represent me at the General Assembly meetings of the Owners in ${BUILDINGNAME} ${BUILDINGDESCRIPTION}, and he/she shall be entitled to vote to adopt the resolutions on my behalf, at his/her discretion, without limitation on all matters discussed at the General Assembly meetings - annual or other.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">2. Пълномощникът има право да гласува и взема решения от мое име  изцяло по негова преценка без ограничение за определяне и събиране на паричната вноска за разходите за управление и поддръжка на общите части.</td>
+            <td class="border-left" width="50%">2. The proxy is entitled to vote and approve decisions on my behalf, at his/her discretion, without limitation for determination of the amount and  the process of collecting the annual MM fee for maintenance and management.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">3. Пълномощникът има право да гласува и взема решения от мое име  изцяло по негова преценка без ограничение за определяне и събиране на вноски за Фонд „Ремонт и Обновяване“.</td>
+            <td class="border-left" width="50%">3. The proxy is entitled to vote and approve decisions on my behalf, at his/her discretion, without limitation for determination and process of raising  amounts into “Capital Repair and renovation“ fund (sinking fund).</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">4. Пълномощникът има право да гласува и взема решения от мое име изцяло по негова преценка без ограничение за разпореждане и използване на средствата събрани във Фонд „Ремонт и Обновяване“.</td>
+            <td class="border-left" width="50%">4. The proxy is entitled to vote and approve decisions on my behalf, at his/her discretion, without limitation for spending and using amounts from fund “Capital Repair and renovation“ (sinking fund).</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">5. Настоящото отменя всякакви други пълномощни дадени в този смисъл на други лица.</td>
+            <td class="border-left" width="50%">5. This supersedes any other voting representations in effect, given to other parties.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">6. Настоящето съгласие важи до ${EXPIRY}г.</td>
+            <td class="border-left" width="50%">6. This agreement expires on ${EXPIRY}.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">7. Това пълномощно е невалидно в случай, че Собственика присъства на ОС.</td>
+            <td class="border-left" width="50%">7. The proxy is not entitled with voting representation in case the apartment owner is present at the AGM.</td>
+        </tr>
+        <tr>
+            <td class="padding border-right" width="50%">Текстът на настоящото съгласие да се тълкува разширително и в полза на упълномощеното лице.</td>
+            <td class="padding border-left" width="50%">The text of this agreement is to be accepted extensively in a favor of the person representing the owner.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">Настоящото съгласие се състави на български и английски език. В случай на противоречие между текста на български и английски език, меродавен ще бъде текста на английски език.</td>
+            <td class="border-left" width="50%">The present agreement is made in Bulgarian and in English. In case of discrepancies between the Bulgarian and English version the English version shall prevail.</td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">&nbsp;</td>
+            <td class="border-left" width="50%">&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="padding text-center border-right" width="50%">----------------------------------------------------------</td>
+            <td class="padding text-center border-left" width="50%">----------------------------------------------------------</td>
+        </tr>
+        <tr>
+            <td class="text-center border-right" width="50%">СОБСТВЕНИК НА АПАРТАМЕНТ</td>
+            <td class="text-center border-left" width="50%">APARTMENT OWNER</td>
+        </tr>
+        <tr>
+            <td class="padding text-center border-right font-size-7" width="50%"><strong>МОЛЯ НАПИШЕТЕ ПЪЛНОТО СИ ИМЕ</strong></td>
+            <td class="padding text-center border-left font-size-7" width="50%"><strong>PLEASE PRINT FULL NAME</strong></td>
+        </tr>
+        <tr>
+            <td class="border-right" width="50%">&nbsp;</td>
+            <td class="border-left" width="50%">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+.has-addon-feedback .form-control-feedback {
+    right: auto;
+    display: inline-block;
+    margin-left: -$input-height-base;
+}
+
+.form-group-left {
+    @include span(6);
+}
+
+.form-group-right {
+    @include span(6 last);
+}
+
+.form-group-3-left {
+    @include span(4);
+}
+
+.form-group-3-right {
+    @include span(4 last);
+}
+
+.form-group-4-left {
+    @include span(3);
+}
+
+.form-group-4-right {
+    @include span(3 last);
+}
+
+p.form-control {
+    background-color: $brand-info;
+    border-color: darken($brand-info, 5%);
+    color: #fff;
+}
+
+html .form-horizontal {
+    .checkbox-inline {
+        padding-top: 0;
+    }
+}
+
+textarea {
+    resize: vertical;
+    min-height: 3.125em; /* 50/16 */
+}
+
+#merge-fields .btn-group-wrapper,
+#adults-fields .btn-group-wrapper,
+#children-fields .btn-group-wrapper {
+    margin-bottom: 1.25em; /* 20/16 */
+}
+
+.form-inline {
+  .form-control-100 {
+    width: 100%;
+  }
+}
+
+.form-control-rental-rates {
+  width: 60px!important;
+  margin-left: 2px;
+  margin-right: 2px;
+  text-align: center;
+  display: inline-block;
+  padding: 0;
+}

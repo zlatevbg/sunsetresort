@@ -1,0 +1,44 @@
+#breadcrumbs {
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    padding: 0 0.3125em 0 0; /* 5/16 */
+
+    > ol {
+        list-style-type: none;
+        padding: 0 0.625em; /* 10/16 */
+        margin: 0;
+        height: 100%;
+        @include clearfix;
+
+        > li {
+            float: left;
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            line-height: pxEmFont(29px, 0.875em);
+            font-size: 0.875em; /* 14/16 */
+
+            &.active {
+                > a {
+                    color: $accent-primary;
+                }
+            }
+
+            > span {
+                color: $gray-light;
+                padding: 0 pxEmFont(8px, $font-size-small);
+                font-size: $font-size-small;
+                font-weight: lighter;
+            }
+
+            > a {
+                display: inline-block;
+                color: $gray;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

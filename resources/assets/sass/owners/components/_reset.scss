@@ -1,0 +1,287 @@
+// Bootstrap
+
+$screen-xs1: 480px;
+$screen-xs2: 600px;
+$screen-sm: 768px;
+$screen-md: 960px;
+$screen-lg: 1200px;
+$screen-xs-max: $screen-xs1; // responsive tables
+
+$font-size-root: 16px;
+$font-unit: 0em;
+
+$font-family-sans-serif:  Roboto, Helvetica, Arial, sans-serif;
+$font-family-special:  Oswald, Helvetica, Arial, sans-serif;
+
+$font-size-base: 1 + $font-unit;
+$font-size-large: 1.25 + $font-unit; // ~20px
+$font-size-small: .75 + $font-unit; // ~12px
+
+$font-size-h1: 2 + $font-unit; // ~32px
+$font-size-h2: 1.5 + $font-unit; // ~24px
+$font-size-h3: 1.25 + $font-unit; // ~20px
+$font-size-h4: $font-size-base;
+$font-size-h5: .875 + $font-unit; // ~14px
+$font-size-h6: .75 + $font-unit; // ~12px
+
+$line-height-base: 1.375; // 22/16
+$line-height-computed: ($font-size-base * $line-height-base); // ~22px
+
+$padding-base-vertical: .375 + $font-unit; /* 6/16 */
+$padding-base-horizontal: .75 + $font-unit; /* 12/16 */
+
+$padding-large-vertical: .625 + $font-unit; /* 10/16 */
+$padding-large-horizontal: 1 + $font-unit;
+
+$padding-small-vertical: .3125 + $font-unit; /* 5/16 */
+$padding-small-horizontal: .625 + $font-unit; /* 10/16 */
+
+$padding-xs-vertical: .0625 + $font-unit; /* 1/16 */
+$padding-xs-horizontal: .3125 + $font-unit; /* 5/16 */
+
+$line-height-large: 1.25;
+$line-height-small: 1.5;
+
+$border-radius-base: .25 + $font-unit; /* 4/16 */
+$border-radius-large: .375 + $font-unit; /* 6/16 */
+$border-radius-small: .1875 + $font-unit; /* 3/16 */
+
+$caret-width-base: .25 + $font-unit; /* 4/16 */
+$caret-width-large: .3125 + $font-unit; /* 5/16 */
+
+$table-cell-padding: .5 + $font-unit; /* 8/16 */
+$table-condensed-cell-padding: .3125 + $font-unit; /* 5/16 */
+
+$input-height-base: ($line-height-computed + ($padding-base-vertical * 2) + ((2px / $font-size-root) + $font-unit));
+$input-height-large: (($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + ((2px / $font-size-root) + $font-unit));
+$input-height-small: (($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + ((2px / $font-size-root) + $font-unit));
+
+$input-border-focus: $brand-primary;
+
+$form-group-margin-bottom: .9375 + $font-unit; /* 15/16 */
+
+$alert-padding: .9375 + $font-unit; /* 15/16 */
+
+$thumbnail-padding: .25 + $font-unit; /* 4/16 */
+$thumbnail-caption-padding: .5625 + $font-unit; /* 9/16 */
+
+$navbar-height: 3.125 + $font-unit; /* 50/16 */
+
+html {
+    font-size: 100%!important;
+
+//
+// Alerts
+// --------------------------------------------------
+
+.alert {
+    > p + p {
+        margin-top: .3125em; /* 5/16 */
+    }
+}
+
+.alert-dismissible {
+    padding-right: ($alert-padding + ((20px / $font-size-root) + $font-unit));
+}
+
+//
+// Buttons
+// --------------------------------------------------
+
+.btn-block + .btn-block {
+    margin-top: .3125em; /* 5/16 */
+}
+
+//
+// Button groups
+// --------------------------------------------------
+
+.btn-toolbar {
+    margin-left: -0.3125em; /* 5/16 */
+
+    > .btn,
+    > .btn-group,
+    > .input-group {
+        margin-left: 0.3125em; /* 5/16 */
+    }
+}
+
+.btn-group > .btn + .dropdown-toggle {
+    padding-left: 0.5em; /* 8/16 */
+    padding-right: 0.5em; /* 8/16 */
+}
+.btn-group > .btn-lg + .dropdown-toggle {
+    padding-left: 0.75em; /* 12/16 */
+    padding-right: 0.75em; /* 12/16 */
+}
+
+//
+// Code (inline and block)
+// --------------------------------------------------
+
+pre {
+    font-size: ($font-size-base - ((1px / $font-size-root) + $font-unit));
+    padding: (($line-height-computed - ((1px / $font-size-root) + $font-unit)) / 2);
+}
+
+//
+// Forms
+// --------------------------------------------------
+
+label {
+    margin-bottom: .3125em; /* 5/16 */
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: .25em 0 0; /* 4/16 */
+}
+
+.radio,
+.checkbox {
+    margin-top: .625em; /* 10/16 */
+    margin-bottom: .625em; /* 10/16 */
+
+    label {
+        padding-left: 1.25em; /* 20/16 */
+    }
+}
+
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  margin-left: -1.25em; /* 20/16 */
+  margin-top: .25em \9; /* 4/16 */
+}
+
+@media (min-width: $screen-sm) {
+    .form-inline {
+        .radio,
+        .checkbox {
+            margin-top: 0;
+            margin-bottom: 0;
+
+            label {
+                padding-left: 0;
+            }
+        }
+
+        .radio input[type="radio"],
+        .checkbox input[type="checkbox"] {
+            margin-left: 0;
+        }
+    }
+}
+
+.radio + .radio,
+.checkbox + .checkbox {
+  margin-top: -.3125em; /* 5/16 */
+}
+
+.radio-inline,
+.checkbox-inline {
+    padding-left: 1.25em; /* 20/16 */
+}
+
+.radio-inline + .radio-inline,
+.checkbox-inline + .checkbox-inline {
+    margin-left: .625em; /* 10/16 */
+}
+
+.help-block {
+    margin-top: .3125em; /* 5/16 */
+    margin-bottom: .625em; /* 10/16 */
+}
+
+.form-horizontal {
+    .radio,
+    .checkbox,
+    .radio-inline,
+    .checkbox-inline {
+        padding-top: ($padding-base-vertical + ((1px / $font-size-root) + $font-unit));
+    }
+
+    .radio,
+    .checkbox {
+        min-height: ($line-height-computed + ($padding-base-vertical + ((1px / $font-size-root) + $font-unit)));
+    }
+
+    .form-group {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    @media (min-width: $screen-sm) {
+        .control-label {
+            padding-top: ($padding-base-vertical + ((1px / $font-size-root) + $font-unit));
+        }
+    }
+
+    .form-group-sm {
+        @media (min-width: $screen-sm) {
+            .control-label {
+                padding-top: ($padding-small-vertical + ((1px / $font-size-root) + $font-unit));
+            }
+        }
+    }
+}
+
+.has-feedback label {
+  & ~ .form-control-feedback {
+     top: ($line-height-computed + ((5px / $font-size-root) + $font-unit));
+  }
+}
+
+select + .form-control-feedback {
+    right: 1.25em; /* 20/16 */
+}
+
+output {
+    padding-top: ($padding-base-vertical + ((1px / $font-size-root) + $font-unit));
+}
+
+.form-control-static {
+    padding-top: ($padding-base-vertical + ((1px / $font-size-root) + $font-unit));
+    padding-bottom: ($padding-base-vertical + ((1px / $font-size-root) + $font-unit));
+}
+
+//
+// Input groups
+// --------------------------------------------------
+
+.input-group-btn {
+    font-size: $font-size-base;
+}
+
+//
+// Popovers
+// --------------------------------------------------
+
+.popover-title {
+    border-radius: ($border-radius-large - ((1px / $font-size-root) + $font-unit)) ($border-radius-large - ((1px / $font-size-root) + $font-unit)) 0 0;
+}
+
+//
+// Typography
+// --------------------------------------------------
+
+.list-inline {
+    margin-left: -.3125em; /* 5/16 */
+
+    > li {
+        padding-left: .3125em; /* 5/16 */
+        padding-right: .3125em; /* 5/16 */
+    }
+}
+
+blockquote {
+  border-left-width: .3125em; /* 5/16 */
+}
+
+blockquote.pull-right {
+  padding-right: .9375em; /* 15/16 */
+  border-right-width: .3125em; /* 5/16 */
+}
+
+}

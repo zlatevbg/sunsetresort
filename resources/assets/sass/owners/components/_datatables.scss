@@ -1,0 +1,201 @@
+.dataTableWrapper {
+    font-size: 0.875em; /* 14/16 */
+
+    &.table-responsive {
+        border: none;
+    }
+
+    > header {
+        @include clearfix;
+
+        > .headings {
+            float: left;
+
+            > h1 {
+                margin: 0;
+                color: $brand-primary;
+            }
+
+            > h2 {
+                margin: pxEmFont(10px, $font-size-h2) 0 0;
+                color: $brand-primary;
+                font-style: italic;
+            }
+        }
+
+        > .btn-group-wrapper {
+            float: right;
+        }
+    }
+
+    > .dataTables_wrapper {
+        margin-top: pxEmFont(10px, 0.875em);
+    }
+}
+
+table.dataTable {
+    width: 100%!important;
+
+    &.table-checkbox {
+        tbody tr,
+        thead th:first-child {
+            cursor: pointer;
+        }
+    }
+
+    &.table-thumbnails tbody td {
+        vertical-align: middle;
+    }
+
+    thead > tr {
+        background-color: #fff;
+
+        > th.sorting {
+            padding-right: 0;
+        }
+    }
+
+    tbody {
+        > tr.selected {
+            background-color: $background-primary;
+        }
+
+        td {
+            white-space: nowrap;
+
+            @include breakpoint($screen-xs1) {
+                white-space: normal;
+            }
+        }
+    }
+
+    tfoot {
+        width: 100%!important;
+        display: none;
+
+        > tr {
+            background-color: #fff;
+
+            &.bg-info {
+              background-color: $state-info-bg;
+            }
+
+            > th {
+                border-bottom: none;
+                border-top-width: 3px;
+                vertical-align: middle;
+
+                > p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .vertical-center {
+        vertical-align: middle;
+    }
+
+    .dtr-title {
+        float: left;
+    }
+
+    .dtr-data {
+        float: right;
+        margin-left: 1.25em; /* 20/16 */
+
+        table {
+            margin-bottom: 0;
+        }
+    }
+
+    &.dtr-inline.collapsed > tbody > tr > td:first-child:before,
+    &.dtr-inline.collapsed > tbody > tr > th:first-child:before {
+        line-height: 16px;
+    }
+
+    &.dtr-inline.collapsed > tbody > tr.child td {
+        padding-left: 0.5em;
+    }
+
+    & > tbody > tr.child ul {
+        display: block;
+    }
+
+    & > tbody > tr.child ul li {
+        @include clearfix;
+    }
+
+    .payment-info {
+        > table {
+            margin-bottom: 0;
+
+            td {
+                text-align: right;
+            }
+        }
+    }
+
+    a.row-details {
+        cursor: pointer;
+    }
+
+    td.row-details {
+        padding: 0;
+    }
+
+    .row-details-table {
+        margin-bottom: 0;
+
+        tr {
+            background-color: $background-primary;
+        }
+
+        td {
+            border: none;
+        }
+    }
+}
+
+.dataTableL {
+    @include breakpoint($screen-xs1) {
+        @include span(6);
+    }
+}
+
+.dataTableF {
+    @include breakpoint($screen-xs1) {
+        @include span(6 last);
+    }
+}
+
+.dataTableI {
+    @include breakpoint($screen-xs1) {
+        @include span(5);
+    }
+}
+
+.dataTableP {
+    @include breakpoint($screen-xs1) {
+        @include span(7 last);
+    }
+}
+
+div.dataTables_wrapper div.dataTables_length,
+div.dataTables_wrapper div.dataTables_filter,
+div.dataTables_wrapper div.dataTables_info,
+div.dataTables_wrapper div.dataTables_paginate {
+    text-align: left;
+}
+
+@include breakpoint($screen-xs1) {
+    div.dataTables_wrapper div.dataTables_filter,
+    div.dataTables_wrapper div.dataTables_paginate {
+        text-align: right;
+    }
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child:before {
+  top: auto;
+}
